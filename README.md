@@ -1,118 +1,115 @@
-<p align="center">
-  <img width="auto" src="https://cms.count.ly/uploads/countly_github_56791635fe.png?updated_at=2023-04-05T09:56:43.491Z"/>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9860c04abd97d1125e33a1d23429d77037c50fa606445982a6692ad6948bfc1e/68747470733a2f2f636d732e636f756e742e6c792f75706c6f6164732f636f756e746c795f6769746875625f353637393136333566652e706e673f757064617465645f61743d323032332d30342d30355430393a35363a34332e3439315a"><img width="auto" src="https://camo.githubusercontent.com/9860c04abd97d1125e33a1d23429d77037c50fa606445982a6692ad6948bfc1e/68747470733a2f2f636d732e636f756e742e6c792f75706c6f6164732f636f756e746c795f6769746875625f353637393136333566652e706e673f757064617465645f61743d323032332d30342d30355430393a35363a34332e3439315a" data-canonical-src="https://cms.count.ly/uploads/countly_github_56791635fe.png?updated_at=2023-04-05T09:56:43.491Z" style="max-width: 100%;"></a>
 </p>
-
-![CI](https://github.com/countly/countly-server/actions/workflows/main.yml/badge.svg)
-![CodeQL Analysis](https://github.com/countly/countly-server/actions/workflows/codeql-analysis.yml/badge.svg)
-
-## 🔗 Quick links
-
-* [Countly Website](https://countly.com)
-* [Countly Server installation guide](https://support.count.ly/hc/en-us/articles/360036862332-Installing-the-Countly-Server)
-* [Countly SDKs, download and documentation links](https://support.count.ly/hc/en-us/articles/360037236571-Downloading-and-Installing-SDKs)
-* [Countly Community on Discord](https://discord.gg/countly)
-* [User Guides for Countly features](https://support.count.ly/hc/en-us/sections/7039354168729-User-Guides-Countly-22-x)
-
-## 🌟 What is Countly?
-
-Countly is a product analytics platform that helps teams track, analyze and act on their user actions and behaviour on mobile, web and desktop applications. 
-
-Countly is used to track 1.5B unique identities on more than 16,000 applications via 2,000+ servers worldwide. It securely processes billions of data points every day in the cloud and on-premises, enabling teams of all sizes to build better applications and engaging experiences while maintaining full control over their product analytics data flow.
-
-## 🚀 What are the Countly editions?                   
-
-* **Countly Lite** — Essential plugins/features and a free-to-use, open source, non-commercial license. Available as self-hosted. Suitable for individuals and small organizations.
-* **Countly Enterprise** — Offers a wider range of plugins/features, granular data, an SLA, and direct support. Available as self-hosted or Countly hosted/managed. Suitable for medium and large organizations.
-* **Countly Flex** — Our SaaS platform that offers some Enterprise features as core features, and some others as add-ons. Everyone gets their dedicated and fully-managed Countly server(s) in the region they choose. Suitable for individuals, small and medium-sized organizations.  
-
-For a detailed comparison of different editions [please check here](https://countly.com/pricing). To try the Countly Flex [please visit this page]([https://countly.com/flex](https://countly.com/flex)).
-
-Also, please note that SDKs of Countly are the same for all editions.
-
-## 📦 What is included in this repository?
-
-This repository includes server-side part of Countly, with the following features: 
-
-* Session, view and event collection and reporting
-* Crash/error reporting for iOS, Android, React Native, Flutter, NodeJS, Unity, Java and Javascript
-* Rich and interactive push notifications for iOS and Android
-* Remote configuration to adjust your app's logic, appearance, and behavior on the fly
-* In-app ratings with customizable widgets
-* Built in reports and customizable dashboards
-* Email reports and alerts
-* Hooks to send the data to external parties via email or webhooks
-* Data Manager to plan and manage events and event segmentations
-* Compliance Hub for consent collection and data subject request management
-* User, application and permission management
-* Read and write APIs
-* Plugin based architecture for easy customization
-
-![content](https://count.ly/github/countly-highlights.png?v3)
-
-## 📈 What can Countly track?
-
-Countly can collect and visualize data from mobile, web and desktop applications. Using the write-API you can send data into Countly from any source. For more information please check the below resources: 
-
-* [List of Countly SDKs, documentation and download information](https://support.count.ly/hc/en-us/articles/360037236571-Downloading-and-Installing-SDKs)
-* [SDK development guide to build your own SDK](https://support.count.ly/hc/en-us/articles/360037753291-SDK-development-guide)
-* [Countly Server Write API to send data into Countly from any source](https://api.count.ly/reference/i)
-
-## 🛠️ Installing and upgrading Countly server
-
-Countly installation script assumes it is running on a fresh Ubuntu/CentOS/RHEL Linux without any services listening on port 80 or 443 (which should also be open to incoming traffic), and takes care of every library and software required to be installed for Countly to run.
-
-There are several ways to install Countly:
-
-1. The following command will download and install Countly on your **Ubuntu** or **CentOS** server.
-
-   `wget -qO- https://c.ly/install | bash`
-
-2. For bash lovers, we provide a beautiful installation script (`bin/countly.install.sh`) in countly-server package which installs everything required to run Countly Server. For this, you need a stable release of this repository [available here](https://github.com/Countly/countly-server/releases).
-
-3. Countly Lite also has Docker support - [see our official Docker repository](https://registry.hub.docker.com/r/countly/countly-server/) and [installation instructions for Docker](https://support.count.ly/hc/en-us/articles/360036862332-Installing-the-Countly-Server).
-
-If you want to upgrade Countly from a previous version, please take a look at [upgrading documentation](https://support.count.ly/hc/en-us/articles/360037443652-Upgrading-the-Countly-Server).
-
-## 🧩 API, extensibility and plugins
-
-Countly has a [well-defined API](https://api.count.ly), that reads and writes data from/to the Countly backend. Countly dashboard is built using the read API, so it's possible to fetch any information you see on the dashboard using the API.
-
-Countly is extensible using the plugin architecture. If you would like to modify any exiting feature by extending it or changing it, or if you would like to add completely new capabilities to Countly you can modify existing plugins or create new ones. We suggest [you read this document](https://support.count.ly/hc/en-us/articles/360036862392-Introduction) if you would like to start with plugin development.
-
-## 💚 Community
-
-We have a new Discord Server (new as of Apr 2023) for our community 🎉 [Please join us](https://discord.gg/countly) for any support requests, feature ideas, to showcase the application you are working on and for some occasional fun :)
-
-## 🔒 Security
-
-Security is very important to us. If you discover any issue regarding security, please disclose the information responsibly by sending an email to security@count.ly and **not by creating a GitHub issue**.
-
-## 🏗️ Built with
-
-* **MongoDB** — One of the most popular NoSQL databases
-* **NodeJS** — An open-source, cross-platform JavaScript runtime environment
-* **Linux** — What we all love using ;-)
-
-Plus lots of [open source libraries](https://support.count.ly/hc/en-us/articles/360037092232-Open-source-components)!         
-
-## 🤝 How can I help you with your efforts?
-
-1. Fork this repo
-2. Create your feature branch (`git checkout -b my-new-super-feature`)
-3. Commit your changes (`git commit -am 'Add some cool feature'`)
-4. Push to the branch (`git push origin my-new-super-feature`)
-5. Create a new pull request
-
-Also, you are encouraged to read an extended contribution section on [how to contribute to Countly](https://github.com/Countly/countly-server/blob/master/CONTRIBUTING.md).
-
-## 👍 Badges
-
-If you like Countly, why not use one of our badges and give a link back to us?
-
-<a href="https://countly.com/?utm_source=badge" rel="nofollow"><img style="width:145px;height:60px" src="https://count.ly/badges/dark.svg?v2" alt="Countly - Product Analytics" /></a>
-
-    <a href="https://countly.com/?utm_source=badge" rel="nofollow"><img style="width:145px;height:60px" src="https://count.ly/badges/dark.svg" alt="Countly - Product Analytics" /></a>
-
-<a href="https://countly.com/?utm_source=badge" rel="nofollow"><img style="width:145px;height:60px" src="https://count.ly/badges/light.svg?v2" alt="Countly - Product Analytics" /></a>
-
-    <a href="https://countly.com/?utm_source=badge" rel="nofollow"><img style="width:145px;height:60px" src="https://count.ly/badges/light.svg" alt="Countly - Product Analytics" /></a>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/countly/countly-server/actions/workflows/main.yml/badge.svg"><img src="https://github.com/countly/countly-server/actions/workflows/main.yml/badge.svg" alt="CI" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/countly/countly-server/actions/workflows/codeql-analysis.yml/badge.svg"><img src="https://github.com/countly/countly-server/actions/workflows/codeql-analysis.yml/badge.svg" alt="代码QL分析" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--quick-links" class="anchor" aria-hidden="true" tabindex="-1" href="#-quick-links"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗 快速链接</font></font></h2>
+<ul dir="auto">
+<li><a href="https://countly.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly网站</font></font></a></li>
+<li><a href="https://support.count.ly/hc/en-us/articles/360036862332-Installing-the-Countly-Server" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 服务器安装指南</font></font></a></li>
+<li><a href="https://support.count.ly/hc/en-us/articles/360037236571-Downloading-and-Installing-SDKs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly SDK、下载和文档链接</font></font></a></li>
+<li><a href="https://discord.gg/countly" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Discord 上的 Countly 社区</font></font></a></li>
+<li><a href="https://support.count.ly/hc/en-us/sections/7039354168729-User-Guides-Countly-22-x" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 功能的用户指南</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content--what-is-countly" class="anchor" aria-hidden="true" tabindex="-1" href="#-what-is-countly"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🌟Countly是什么？</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 是一个产品分析平台，可帮助团队跟踪、分析用户在移动、Web 和桌面应用程序上的操作和行为并采取行动。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 用于通过全球 2,000 多个服务器跟踪 16,000 多个应用程序上的 1.5B 个唯一身份。它每天在云端和本地安全地处理数十亿个数据点，使各种规模的团队能够构建更好的应用程序和引人入胜的体验，同时保持对其产品分析数据流的完全控制。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--what-are-the-countly-editions" class="anchor" aria-hidden="true" tabindex="-1" href="#-what-are-the-countly-editions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🚀 Countly 版本有哪些？</font></font></h2>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly Lite</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> — 基本插件/功能和免费使用、开源、非商业许可证。可作为自托管。适合个人和小型组织。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly Enterprise</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> — 提供更广泛的插件/功能、精细数据、SLA 和直接支持。可作为自托管或 Countly 托管/管理。适合中型和大型组织。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly Flex</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> — 我们的 SaaS 平台提供一些企业功能作为核心功能，另一些作为附加功能。每个人都可以在他们选择的区域获得专用且完全托管的 Countly 服务器。适合个人、中小型组织。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关不同版本的详细比较，</font></font><a href="https://countly.com/pricing" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请查看此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。要试用 Countly Flex，请访问此页面。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">另请注意，Countly 的 SDK 对于所有版本都是相同的。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--what-is-included-in-this-repository" class="anchor" aria-hidden="true" tabindex="-1" href="#-what-is-included-in-this-repository"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📦 这个存储库中包含什么？</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该存储库包括 Countly 的服务器端部分，具有以下功能：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会话、视图和事件收集和报告</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iOS、Android、React Native、Flutter、NodeJS、Unity、Java 和 Javascript 的崩溃/错误报告</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适用于 iOS 和 Android 的丰富且交互式的推送通知</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">远程配置以动态调整应用程序的逻辑、外观和行为</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带有可自定义小部件的应用内评级</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内置报告和可定制的仪表板</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件报告和警报</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过电子邮件或网络钩子将数据发送给外部各方的钩子</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据管理器用于计划和管理事件和事件分段</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于收集同意和数据主体请求管理的合规中心</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户、应用程序和权限管理</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">读取和写入 API</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于插件的架构，易于定制</font></font></li>
+</ul>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8bad72150d06ae8d434de0035a3d573603427d1d1ee99cac6018394d5430ced5/68747470733a2f2f636f756e742e6c792f6769746875622f636f756e746c792d686967686c69676874732e706e673f7633"><img src="https://camo.githubusercontent.com/8bad72150d06ae8d434de0035a3d573603427d1d1ee99cac6018394d5430ced5/68747470733a2f2f636f756e742e6c792f6769746875622f636f756e746c792d686967686c69676874732e706e673f7633" alt="内容" data-canonical-src="https://count.ly/github/countly-highlights.png?v3" style="max-width: 100%;"></a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--what-can-countly-track" class="anchor" aria-hidden="true" tabindex="-1" href="#-what-can-countly-track"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📈 Countly 可以追踪什么？</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 可以收集来自移动、Web 和桌面应用程序的数据并将其可视化。使用 write-API，您可以从任何来源将数据发送到 Countly。欲了解更多信息，请查看以下资源：</font></font></p>
+<ul dir="auto">
+<li><a href="https://support.count.ly/hc/en-us/articles/360037236571-Downloading-and-Installing-SDKs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly SDK 列表、文档和下载信息</font></font></a></li>
+<li><a href="https://support.count.ly/hc/en-us/articles/360037753291-SDK-development-guide" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SDK开发指南构建您自己的SDK</font></font></a></li>
+<li><a href="https://api.count.ly/reference/i" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 服务器编写 API 以将数据从任何来源发送到 Countly</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-installing-and-upgrading-countly-server" class="anchor" aria-hidden="true" tabindex="-1" href="#️-installing-and-upgrading-countly-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🛠️ 安装和升级 Countly 服务器</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 安装脚本假定它在全新的 Ubuntu/CentOS/RHEL Linux 上运行，没有任何服务监听端口 80 或 443（也应该对传入流量开放），并负责 Countly 需要安装的每个库和软件跑步。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 Countly 有多种方法：</font></font></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下命令将在您的</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ubuntu</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CentOS</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务器上下载并安装 Countly。</font></font></p>
+<p dir="auto"><code>wget -qO- https://c.ly/install | bash</code></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 bash 爱好者，我们在 countly-server 包中提供了一个漂亮的安装脚本 ( </font></font><code>bin/countly.install.sh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)，它可以安装运行 Countly Server 所需的所有内容。为此，您需要</font></font><a href="https://github.com/Countly/countly-server/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处提供</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此存储库的稳定版本。</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly Lite 还支持 Docker -</font></font><a href="https://registry.hub.docker.com/r/countly/countly-server/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅我们的官方 Docker 存储库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://support.count.ly/hc/en-us/articles/360036862332-Installing-the-Countly-Server" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 安装说明</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想从以前的版本升级 Countly，请查看</font></font><a href="https://support.count.ly/hc/en-us/articles/360037443652-Upgrading-the-Countly-Server" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--api-extensibility-and-plugins" class="anchor" aria-hidden="true" tabindex="-1" href="#-api-extensibility-and-plugins"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🧩 API、可扩展性和插件</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 拥有</font></font><a href="https://api.count.ly" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义明确的 API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，可从 Countly 后端读取数据或将数据写入到 Countly 后端。 Countly 仪表板是使用读取 API 构建的，因此可以使用 API 获取您在仪表板上看到的任何信息。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Countly 可使用插件架构进行扩展。如果您想通过扩展或更改来修改任何现有功能，或者如果您想向 Countly 添加全新功能，您可以修改现有插件或创建新插件。</font><font style="vertical-align: inherit;">如果您想开始插件开发，</font><font style="vertical-align: inherit;">我们建议</font></font><a href="https://support.count.ly/hc/en-us/articles/360036862392-Introduction" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您阅读本文档。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--community" class="anchor" aria-hidden="true" tabindex="-1" href="#-community"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💚 社区</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们为我们的社区提供了一个新的 Discord 服务器（自 2023 年 4 月起新）🎉</font></font><a href="https://discord.gg/countly" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请加入我们</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取任何支持请求、功能想法、展示您正在开发的应用程序并享受一些偶尔的乐趣:)</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--security" class="anchor" aria-hidden="true" tabindex="-1" href="#-security"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔒 安全</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全对我们来说非常重要。如果您发现任何有关安全的问题，请通过发送电子邮件至</font></font><a href="mailto:security@count.ly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">security@count.ly</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来负责任地披露信息</font><font style="vertical-align: inherit;">，而</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不是通过创建 GitHub 问题</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-built-with" class="anchor" aria-hidden="true" tabindex="-1" href="#️-built-with"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🏗️ 构建于</font></font></h2>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MongoDB</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> — 最流行的 NoSQL 数据库之一</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NodeJS</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> — 开源、跨平台的 JavaScript 运行时环境</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux——</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们都喜欢使用的东西;-)</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">还有很多</font></font><a href="https://support.count.ly/hc/en-us/articles/360037092232-Open-source-components" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">！</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--how-can-i-help-you-with-your-efforts" class="anchor" aria-hidden="true" tabindex="-1" href="#-how-can-i-help-you-with-your-efforts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤝 我可以如何帮助你的努力？</font></font></h2>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分叉这个仓库</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建您的功能分支 ( </font></font><code>git checkout -b my-new-super-feature</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提交您的更改 ( </font></font><code>git commit -am 'Add some cool feature'</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推送到分支 ( </font></font><code>git push origin my-new-super-feature</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个新的拉取请求</font></font></li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此外，我们鼓励您阅读有关</font></font><a href="https://github.com/Countly/countly-server/blob/master/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何为 Countly 做出贡献的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展贡献部分。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--badges" class="anchor" aria-hidden="true" tabindex="-1" href="#-badges"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👍 徽章</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您喜欢 Countly，为什么不使用我们的徽章之一并向我们提供返回链接？</font></font></p>
+<p dir="auto"><a href="https://countly.com/?utm_source=badge" rel="nofollow"><img style="width: 145px; height: 60px; max-width: 100%;" src="https://camo.githubusercontent.com/5d8fcbf7d56c962e7d43637d6d5ce0ec4d533c8844528c8721ca8ebd036980fb/68747470733a2f2f636f756e742e6c792f6261646765732f6461726b2e7376673f7632" alt="Countly - 产品分析" data-canonical-src="https://count.ly/badges/dark.svg?v2"></a></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>&lt;a href="https://countly.com/?utm_source=badge" rel="nofollow"&gt;&lt;img style="width:145px;height:60px" src="https://count.ly/badges/dark.svg" alt="Countly - Product Analytics" /&gt;&lt;/a&gt;
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<a href=&quot;https://countly.com/?utm_source=badge&quot; rel=&quot;nofollow&quot;><img style=&quot;width:145px;height:60px&quot; src=&quot;https://count.ly/badges/dark.svg&quot; alt=&quot;Countly - Product Analytics&quot; /></a>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><a href="https://countly.com/?utm_source=badge" rel="nofollow"><img style="width: 145px; height: 60px; max-width: 100%;" src="https://camo.githubusercontent.com/ab08632243b1ecd44687a9216c4b79eff0b2bbe047e5264764670205030d6e33/68747470733a2f2f636f756e742e6c792f6261646765732f6c696768742e7376673f7632" alt="Countly - 产品分析" data-canonical-src="https://count.ly/badges/light.svg?v2"></a></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>&lt;a href="https://countly.com/?utm_source=badge" rel="nofollow"&gt;&lt;img style="width:145px;height:60px" src="https://count.ly/badges/light.svg" alt="Countly - Product Analytics" /&gt;&lt;/a&gt;
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<a href=&quot;https://countly.com/?utm_source=badge&quot; rel=&quot;nofollow&quot;><img style=&quot;width:145px;height:60px&quot; src=&quot;https://count.ly/badges/light.svg&quot; alt=&quot;Countly - Product Analytics&quot; /></a>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</article></div>
